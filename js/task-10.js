@@ -27,9 +27,11 @@ function createBoxes(amount) {
     newBox.style.height = `${size}px`;
     newBox.style.background = getRandomHexColor();
     size += 10;
-    newBoxes.push(newBox)
+    newBoxes.push(newBox);
   }
   boxContainer.append(...newBoxes);
+  input.value = "";
+ 
 }
 
 function destroyBoxes () {
